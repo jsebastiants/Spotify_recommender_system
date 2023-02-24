@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spotify Recommendation System</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="\static\style.css">
+  <div class="login">
+    <h1>Spotify system recommendation</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+        <input type="text" name="song" id="list" placeholder="song" required="required" /><br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+   
+  </div>
+  {{prediction_text}}
+</head>
+<body>
+   <div id="main">
+    <div data-testid="root" class="Root encore-dark-theme">
+        <div></div>
+        <div class="Root__top-container">
+            <div class="Root__top-bar">
+                <header aria-label="Barra superior y menú del usuario" class="facDIsOQo9q7kiWc4jSg">
+                    <div class="T1xI1RTSFU7Wu94UuvE6" style="opacity: 0;">
+                        <div class="EvIR4O7jOSbNmxtMdIQ0"></div>
+                    </div>
+                    <div data-testid="topbar-content-wrapper" class="rovbQsmAS_mwvpKHaVhQ">
+                        <div data-testid="topbar-content" class="qHWqOt_TYlFxiF0Dm2fD">
+                            <div class="g3Xinb8x23n81ejvS9Uj">
+                                <form action="{{ url_for('predict')}}"method="post" role="search">
+                                    <input>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+
+</html>

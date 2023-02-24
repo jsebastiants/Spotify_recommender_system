@@ -1,0 +1,12 @@
+Flask
+pandas
+numpy 
+sklearn
+matplotlib
+seaborn
+gunicorn
+plotly
+psycopg2
+scipy
+spotipy
+dill
