@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-419" dir="ltr" class="no-focus-outline spotify__os--is-windows spotify__container--is-web" style="--nav-bar-width:232px;">
 <head>
   <title>Spotify Recommendation System</title>
   <meta charset="UTF-8">
@@ -7,22 +7,11 @@
 
   <!-- Google Fonts -->
   <link rel="stylesheet" href="\static\style.css">
-  <div class="login">
-    <h1>Spotify system recommendation</h1>
-
-     <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
-        <input type="text" name="song" id="list" placeholder="song" required="required" /><br>
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-    </form>
-   
-  </div>
-  {{prediction_text}}
+  
 </head>
 <body>
    <div id="main">
-    <div data-testid="root" class="Root encore-dark-theme">
-        <div></div>
+    <div data-testid="root" class="Root encore-dark-theme"> 
         <div class="Root__top-container">
             <div class="Root__top-bar">
                 <header aria-label="Barra superior y menú del usuario" class="facDIsOQo9q7kiWc4jSg">
@@ -33,12 +22,215 @@
                         <div data-testid="topbar-content" class="qHWqOt_TYlFxiF0Dm2fD">
                             <div class="g3Xinb8x23n81ejvS9Uj">
                                 <form action="{{ url_for('predict')}}"method="post" role="search">
-                                    <input>
+                                    <input class="Type__TypeElement-sc-goli3j-0 hGXzYa QO9loc33XC50mMRUCIvf" type="text" name="song" placeholder="¿Qué quieres escuchar?" required="required" maxlength="800" autocorrect="false" autocapitalize="off" style="color: rgb(0, 0, 0);">
                                 </form>
+                                <div class="t2K4_iLmAyDtH7mcT5Wy">
+                                    <span class="H6jh9Xd7DNOq3NsLDmCB">
+                                        <svg role="img" height="24" widht="24" aria-hidden="true" class="Svg-sc-ytk21e-0 uPxdw mOLTJ2mxkzHJj6Y9_na_" viewBox="0 0 24 24" data-encore-id="icon">
+                                            <path d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 1 0 1.414-1.414l-4.344-4.344a9.157 9.157 0 0 0 2.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"></path>
+                                        </svg>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </header>
+            </div>
+            <div class="Root__main-view">
+                <div class="main-view-container">
+                    <div class="under-main-view">
+                        <div class="os-host os-host-foreign os-theme-spotify os-host-resize-disabled os-host-scrollbar-horizontal-hidden main-view-container__scroll-node os-host-transition os-host-overflow os-host-overflow-y os-host-scrolling">
+                            <div class="os-padding">
+                                <div class="os-viewport os-viewport-native-scrollbars-invisible" style="overflow-y: scroll;">
+                                    <div class="os-content" style="padding: 0px; height: 100%; width: 100%;">
+                                        <div class="main-view-container__scroll-node-child-spacer"></div>
+                                        <div class="main-view-container__scroll-node-child" style="min-height: calc(((100vh - 64px) - 90px) - 519px);">
+                                            <main tabindex="-1" aria-label="Spotify – Buscar">
+                                                <div class="contentSpacing" id="searchPage">
+                                                    <div data-testid="grid-container" class="iKwGKEfAfW7Rkx2_Ba4E khkfPsJuVBQyL_5cLT7y" style="--column-width:183px; --column-count:8; --grid-gap:24px; --min-container-width:390px;">
+                                                        <div class="CCi1L2OQvgdZvxkRHeKE">
+                                                            <div class="M7LKuAFiIKaigK0fVguF">
+                                                                <section class="QyANtc_r7ff_tqrf5Bvc Shelf" data-testid="component-shelf" aria-label="Explorar todo">
+                                                                    <div class="q8AZzDc_1BumBHZg0tZb">
+                                                                        <div class="OMuRYOdpUbGif12_lRJl">
+                                                                            <div class="onVWL7MW4PW9FyVajBAc">                                                                             
+                                                                            <h2 class="Type__TypeElement-sc-goli3j-0 fEBgUb MfVrtIzQJ7iZXfRWg6eM" tabindex="-1" data-encore-id="type">
+                                                                                Explorar todo
+                                                                            </h2>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-testid="grid-container" class="iKwGKEfAfW7Rkx2_Ba4E Z4InHgCs2uhk0MU93y_a BtbiwMynlB4flsYu_hA2" style="--column-width:192px; --column-count:5; --grid-gap:24px; --min-container-width:408px;">
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DArNBzkmxXHCqFLx2J" style="background-color: rgb(225, 51, 0);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Podcasts</span>
+                                                                            </div>                                                                            
+                                                                        </a> 
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/new-releases-page" style="background-color: rgb(232, 17, 91);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Nuevos Lanzamientos</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFxXaXKP7zcDp" style="background-color: rgb(225, 51, 0);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005cafa59f90c077c9f618fd0dde30" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Latina</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFEC4WFtoNRpw" style="background-color: rgb(20, 138, 8);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005cafa862ab80dd85682b37c4e768" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Pop</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFQkIFo7vWoOd" style="background-color: rgb(67, 130, 112);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf18079442afeec2a30f3b9502" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Salsa</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFR9D66iFXqzk" style="background-color: rgb(80, 155, 245);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf65600929b4e7da6b813ce8b7" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Cumbia</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAudkNjCgYMM0TZXDr" style="background-color: rgb(141, 103, 171);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Rankings</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/concerts" style="background-color: rgb(115, 88, 255);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://concerts.spotifycdn.com/images/live-events_category-image.jpg" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Eventos en vivo</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFHOzuVTgTizF" style="background-color: rgb(216, 64, 0);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005cafdfdaac1cf9574a196ca25196" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Dance/Electrónica</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFzHmL4tf05da" style="background-color: rgb(225, 17, 140);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf271f9d895003c5f5561c1354" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Estado de ánimo</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFDXXwE9BDJAr" style="background-color: rgb(233, 20, 41);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005cafae7e69beb88f16969641b53e" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Rock</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFCWjUTdzaG0e" style="background-color: rgb(233, 20, 41);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005cafa1a252e3a815b65778d8c2aa" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Indie</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFAXlCG6QvYQ4" style="background-color: rgb(119, 119, 119);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000029249b35f23fb596b6f006a15" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Entrenamiento</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFQ00XGBls6ym" style="background-color: rgb(188, 89, 0);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf7e11c8413dc33c00740579c1" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Hip hop</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFGvOw3O4nLAf" style="background-color: rgb(20, 138, 8);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf013ee3c983e6f60bf28bad5a" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">K-pop</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFA6SOHvT3gck" style="background-color: rgb(83, 122, 161);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005cafcbf80f8ea695536eace4fd2c" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Fiesta</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFJKoGyUMo2hE" style="background-color: rgb(0, 100, 80);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf6ba3a99776446ab3b295d2a6" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Reggae</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFAUsdyVjCQuL" style="background-color: rgb(230, 30, 50);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005cafb03c6f8e7efca2ae36f41b31" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Amor</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFDkd668ypn6O" style="background-color: rgb(233, 20, 41);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005cafefa737b67ec51ec989f5a51d" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Metal</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFAJ5xb0fwo9m" style="background-color: rgb(119, 119, 119);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005cafe289743024639ea8f202364d" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Jazz</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFPrEiAOxgac3" style="background-color: rgb(125, 75, 50);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf12809992dfc5b318892ea07b" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Clásica</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFAjfauKLOZiv" style="background-color: rgb(30, 50, 100);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005cafb2cdd7a95b0a5444aa15cfb5" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Punk</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFCfObibaOZbv" style="background-color: rgb(232, 17, 91);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf26dd3719e8824756914ae61f" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Gaming</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFQIL0AXnG5AK" style="background-color: rgb(176, 40, 151);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67fb8200005caf1867113f5218598847550acd" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Tendencias</span>
+                                                                            </div>                                                                            
+                                                                        </a>
+                                                                        <a draggable="false" class="Em2LrSSfvrgXQoajs6cm" href="https://open.spotify.com/genre/0JQ5DAqbMKFziKOShCi009" style="background-color: rgb(228, 29, 99);">
+                                                                            <div>
+                                                                                <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002c19c5f13f8b3ff2d73ff00bc" alt class="mMx2LUixlnN_Fu45JpFB tV9cjMpTPaykKsn2OVsw Yn2Ei5QZn19gria6LjZj">
+                                                                                <span class="Type__TypeElement-sc-goli3j-0 dXoLvE i2yp6pOoZpYZLd5QWguN" data-encore-id="type">Anime</span>
+                                                                            </div>                                                                            
+                                                                        </a>                                                                                                                                              
+                                                                    </div>
+                                                                </section>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </main>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="os-scrollbar os-scrollbar-vertical os-scrollbar-auto-hidden">
+                                <div class="os-scrollbar-track">
+                                    <div class="os-scrollbar-handle" style="height: 18.0268%; transform: translate(0px, 0px);"></div>
+                                </div>
+                            </div>
+                            <div class="os-scrollbar-corner"></div>                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
